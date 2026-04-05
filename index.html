@@ -126,28 +126,28 @@
             margin-bottom: 0.5rem;
         }
         .accommodation-img {
-            width: 120px;
-            height: 80px;
+            width: 140px;
+            height: 100%;
             object-fit: cover;
-            border-radius: 4px;
-            margin-right: 1rem;
+            border-radius: 6px 0 0 6px;
             vertical-align: middle;
+            flex-shrink: 0;
         }
         .train-option {
             display: flex;
-            align-items: center;
-            gap: 1rem;
+            align-items: stretch;
             margin-bottom: 1.5rem;
-            padding: 1rem;
             border: 1px solid #ecf0f1;
             border-radius: 6px;
             transition: box-shadow 0.2s;
+            overflow: hidden;
         }
         .train-option:hover {
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
         .train-option-info {
             flex: 1;
+            padding: 1rem;
         }
         .train-option-info h4 {
             margin: 0 0 0.5rem 0;
