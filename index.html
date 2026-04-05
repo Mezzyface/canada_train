@@ -14,10 +14,11 @@
             padding: 0;
         }
         header {
-            background-color: #2c3e50;
+            background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)), url('images/canadian-train-rockies4.jpg') center/cover;
             color: #fff;
-            padding: 3rem 1rem;
+            padding: 5rem 1rem;
             text-align: center;
+            position: relative;
         }
         header h1 {
             margin: 0;
@@ -123,6 +124,45 @@
         }
         .location-section .day {
             margin-bottom: 0.5rem;
+        }
+        .accommodation-img {
+            width: 120px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-right: 1rem;
+            vertical-align: middle;
+        }
+        .train-option {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border: 1px solid #ecf0f1;
+            border-radius: 6px;
+            transition: box-shadow 0.2s;
+        }
+        .train-option:hover {
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .train-option-info {
+            flex: 1;
+        }
+        .train-option-info h4 {
+            margin: 0 0 0.5rem 0;
+            color: #2c3e50;
+        }
+        .train-option-info .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 0.5rem;
+        }
+        .train-option-info p {
+            margin: 0;
+            color: #555;
+            font-size: 0.95rem;
         }
         .quick-nav {
             background-color: #f8f9fa;
@@ -231,37 +271,41 @@
     <h2 id="train-options">🚂 Train Accommodation Options</h2>
     <p>VIA Rail's <em>The Canadian</em> offers several accommodation classes. <strong>All Sleeper options (Berth, Cabin, and Prestige) include meals in the dining car.</strong></p>
     
-    <table>
-        <thead>
-            <tr>
-                <th>Class</th>
-                <th>Price (USD)</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>Berth</strong></td>
-                <td>$885</td>
-                <td>Open by day with two couch-style seats facing each other. By night, converts to curtained, semi-private compartments with two stacked beds. Use of public washroom.</td>
-            </tr>
-            <tr>
-                <td><strong>Cabin for 1</strong></td>
-                <td>$1,867</td>
-                <td>Private room featuring a small couch-style seat that converts into a bed, with a vanity and a concealed toilet.</td>
-            </tr>
-            <tr>
-                <td><strong>Cabin for 2</strong></td>
-                <td>$2,800</td>
-                <td>Private room with two armchairs, two retractable stacked beds, a vanity and an ensuite toilet.</td>
-            </tr>
-            <tr>
-                <td><strong>Prestige</strong></td>
-                <td>$12,080</td>
-                <td>Experience an unparalleled level of elegance, comfort, and privileged service.</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="train-option">
+        <img src="images/berth_day.jpg" alt="Berth accommodation" class="accommodation-img">
+        <div class="train-option-info">
+            <h4>Berth</h4>
+            <div class="price">$885</div>
+            <p>Open by day with two couch-style seats facing each other. By night, converts to curtained, semi-private compartments with two stacked beds. Use of public washroom.</p>
+        </div>
+    </div>
+    
+    <div class="train-option">
+        <img src="images/cabin_1_day.jpg" alt="Cabin for 1" class="accommodation-img">
+        <div class="train-option-info">
+            <h4>Cabin for 1</h4>
+            <div class="price">$1,867</div>
+            <p>Private room featuring a small couch-style seat that converts into a bed, with a vanity and a concealed toilet.</p>
+        </div>
+    </div>
+    
+    <div class="train-option">
+        <img src="images/cabin_2_day.jpg" alt="Cabin for 2" class="accommodation-img">
+        <div class="train-option-info">
+            <h4>Cabin for 2</h4>
+            <div class="price">$2,800</div>
+            <p>Private room with two armchairs, two retractable stacked beds, a vanity and an ensuite toilet.</p>
+        </div>
+    </div>
+    
+    <div class="train-option">
+        <img src="images/canadian-skyline-dome-large.jpg" alt="Prestige class" class="accommodation-img">
+        <div class="train-option-info">
+            <h4>Prestige</h4>
+            <div class="price">$12,080</div>
+            <p>Experience an unparalleled level of elegance, comfort, and privileged service with luxury accommodations.</p>
+        </div>
+    </div>
 
     <h2 id="hotels">🏨 Basecamps (Hotels)</h2>
     <p>We are keeping things practical and budget-friendly by booking highly-rated spots directly next to the train stations.</p>
