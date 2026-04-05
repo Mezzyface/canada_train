@@ -202,6 +202,40 @@
             border-color: #2980b9;
             text-decoration: none;
         }
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .photo-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .photo-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        .photo-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+        .photo-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+            padding: 1rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
     </style>
 </head>
 <body>
@@ -220,6 +254,7 @@
         <h3>📋 Quick Navigation</h3>
         <ul>
             <li><a href="#schedule">🗓️ Trip Schedule</a></li>
+            <li><a href="#scenery">🏞️ The Journey</a></li>
             <li><a href="#train-options">🚂 Train Accommodations</a></li>
             <li><a href="#hotels">🏨 Hotels</a></li>
             <li><a href="#costs">💰 Cost Breakdown</a></li>
@@ -266,6 +301,28 @@
     <div class="location-section departure-section">
         <div class="day">
             <strong>Day 10:</strong> Fly Vancouver (YVR) to Austin (AUS) — depart morning
+        </div>
+    </div>
+
+    <h2 id="scenery">🏞️ The Journey: Coast to Coast</h2>
+    <p>Experience Canada's most spectacular landscapes from the comfort of your seat. Four days of breathtaking views as we cross three distinct regions.</p>
+    
+    <div class="photo-gallery">
+        <div class="photo-item">
+            <img src="images/canadian-train-rockies4.jpg" alt="The Canadian Rockies">
+            <div class="photo-caption">The Canadian Rockies — Snow-capped peaks and turquoise lakes</div>
+        </div>
+        <div class="photo-item">
+            <img src="images/canadian-train-shield2.jpg" alt="Canadian Shield">
+            <div class="photo-caption">Canadian Shield — Endless forests, lakes, and granite cliffs</div>
+        </div>
+        <div class="photo-item">
+            <img src="images/canadian-train-thompson2.jpg" alt="Thompson River">
+            <div class="photo-caption">Thompson River Valley — Winding through dramatic canyons</div>
+        </div>
+        <div class="photo-item">
+            <img src="images/canadian-prairies-bridge.jpg" alt="The Prairies">
+            <div class="photo-caption">The Prairies — Wide open skies and golden fields</div>
         </div>
     </div>
 
