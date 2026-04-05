@@ -124,6 +124,43 @@
         .location-section .day {
             margin-bottom: 0.5rem;
         }
+        .quick-nav {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-bottom: 2rem;
+            border: 1px solid #dee2e6;
+        }
+        .quick-nav h3 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+            font-size: 1.1rem;
+        }
+        .quick-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.5rem;
+        }
+        .quick-nav li {
+            margin-bottom: 0;
+        }
+        .quick-nav a {
+            display: block;
+            padding: 0.5rem 1rem;
+            background-color: #fff;
+            border-radius: 4px;
+            border: 1px solid #dee2e6;
+            transition: all 0.2s;
+        }
+        .quick-nav a:hover {
+            background-color: #e9ecef;
+            border-color: #2980b9;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -138,7 +175,20 @@
         <strong>The Game Plan:</strong> We're flying into Toronto, hopping aboard VIA Rail's famous restored mid-century streamliner, <em>The Canadian</em>, and taking a 4-day journey across the Canadian Shield, the Prairies, and the Rocky Mountains before ending up in Vancouver. 
     </div>
 
-    <h2>� Date Options</h2>
+    <div class="quick-nav">
+        <h3>📋 Quick Navigation</h3>
+        <ul>
+            <li><a href="#date-options">📅 Date Options</a></li>
+            <li><a href="#schedules">🗓️ Detailed Schedules</a></li>
+            <li><a href="#train-options">🚂 Train Accommodations</a></li>
+            <li><a href="#hotels">🏨 Hotels</a></li>
+            <li><a href="#costs">💰 Cost Breakdown</a></li>
+            <li><a href="#tips">📝 Important Tips</a></li>
+            <li><a href="#resources">🔗 Resources</a></li>
+        </ul>
+    </div>
+
+    <h2 id="date-options">📅 Date Options</h2>
     <p>Choose your adventure based on when <em>The Canadian</em> departs from Toronto:</p>
     
     <table>
@@ -178,7 +228,7 @@
     
     <p style="margin-top: 1rem;"><em>All options include a buffer day in Toronto before departure and 2-3 days in Vancouver after arrival.</em></p>
 
-    <h2>🗓️ Detailed Schedules by Option</h2>
+    <h2 id="schedules">🗓️ Detailed Schedules by Option</h2>
     
     <h3 style="color: #e67e22; margin-top: 1.5rem;">Option 1: December 6 Departure</h3>
     <p style="margin-top: 0.5rem; margin-bottom: 1rem;"><em>Total: 10 days (Dec 4-13), 9 nights</em></p>
@@ -288,7 +338,7 @@
         </div>
     </div>
 
-    <h2>🚂 Train Accommodation Options</h2>
+    <h2 id="train-options">🚂 Train Accommodation Options</h2>
     <p>VIA Rail's <em>The Canadian</em> offers several accommodation classes. <strong>All Sleeper options (Berth, Cabin, and Prestige) include meals in the dining car.</strong></p>
     
     <table>
@@ -323,7 +373,7 @@
         </tbody>
     </table>
 
-    <h2>🏨 Basecamps (Hotels)</h2>
+    <h2 id="hotels">🏨 Basecamps (Hotels)</h2>
     <p>We are keeping things practical and budget-friendly by booking highly-rated spots directly next to the train stations.</p>
     
     <h3>The Union Hotel (Toronto)</h3>
@@ -332,7 +382,7 @@
     <h3>Sandman Signature Downtown (Vancouver)</h3>
     <p>A reliable, mid-range option near a SkyTrain station, making the trip from Pacific Central Station extremely easy. Features an indoor pool and an on-site sports bar.</p>
 
-    <h2>💰 Estimated Cost Breakdown</h2>
+    <h2 id="costs">💰 Estimated Cost Breakdown</h2>
     
     <h3>Solo Traveler</h3>
     <p><em>Based on Berth or Cabin for 1 accommodations on the train.</em></p>
@@ -411,7 +461,7 @@
     
     <p style="margin-top: 1rem;"><em><strong>Sharing Savings:</strong> By splitting a Cabin for 2 on the train, each person saves $467 compared to booking individual Cabin for 1 tickets!</em></p>
 
-    <h2>📝 Important Things to Know</h2>
+    <h2 id="tips">📝 Important Things to Know</h2>
     
     <h3>What's Included in Your Train Fare</h3>
     <ul>
@@ -446,7 +496,7 @@
         <li><strong>Group discounts:</strong> Available for groups of 6 or more</li>
     </ul>
 
-    <h2>🔗 Helpful Resources</h2>
+    <h2 id="resources">🔗 Helpful Resources</h2>
     <ul>
         <li><a href="https://www.viarail.ca/en/explore-our-destinations/trains/rockies-and-pacific/toronto-vancouver-canadian" target="_blank">VIA Rail Official Canadian Train Page</a></li>
         <li><a href="https://happytowander.com/via-rail-canadian-train/" target="_blank">Comprehensive Guide to The Canadian (Happy to Wander)</a></li>
